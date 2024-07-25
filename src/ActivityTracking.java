@@ -17,3 +17,36 @@ abstract class Activity {
     // Abstract method to be implemented by subclasses
     public abstract void displayActivityDetails();
 }
+
+class Running extends Activity {
+    public Running(double duration, double distance, double caloriesBurned) {
+        super(duration, distance, caloriesBurned);
+    }
+
+    @Override
+    public void displayActivityDetails() {
+        System.out.println("Running Activity: Duration = " + duration + " hours, Distance = " + distance + " km, Calories Burned = " + caloriesBurned);
+    }
+}
+
+class Swimming extends Activity {
+    public Swimming(double duration, double distance, double caloriesBurned) {
+        super(duration, distance, caloriesBurned);
+    }
+
+    @Override
+    public void displayActivityDetails() {
+        System.out.println("Swimming Activity: Duration = " + duration + " hours, Distance = " + distance + " km, Calories Burned = " + caloriesBurned);
+    }
+}
+
+class Cycling extends Activity {
+    public Cycling(double duration, double distance, double caloriesBurned) {
+        super(duration, distance, caloriesBurned);
+    }
+
+    @Override
+    public void displayActivityDetails() {
+        System.out.println("Cycling Activity: Duration = " + duration + " hours, Distance = " + distance + " km, Calories Burned = " + caloriesBurned);
+    }
+}
